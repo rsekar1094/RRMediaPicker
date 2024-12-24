@@ -9,14 +9,14 @@ import Foundation
 
 public extension URL {
     var isImage : Bool {
-        return ["png", "jpg", "gif","jpeg"].contains(self.pathExtension)
+        return ["png", "jpg", "gif","jpeg"].contains(self.pathExtension.lowercased())
     }
     
     var isVideo : Bool {
-        return ["mov", "mp4", "avi","mkv"].contains(self.pathExtension)
+        return ["mov", "mp4", "avi","mkv"].contains(self.pathExtension.lowercased())
     }
     
     var isPdf : Bool {
-        return ["pdf"].contains(self.pathExtension)
+        return ["pdf"].contains(self.pathExtension.lowercased())
     }
 }

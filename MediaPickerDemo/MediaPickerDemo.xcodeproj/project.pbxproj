@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C5637772D1A88CE00B634D9 /* RRMediaView in Frameworks */ = {isa = PBXBuildFile; productRef = 3C5637762D1A88CE00B634D9 /* RRMediaView */; };
 		3C9BB47A29AA7DF000FFC35E /* MediaPickerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BB47929AA7DF000FFC35E /* MediaPickerDemoApp.swift */; };
 		3C9BB47C29AA7DF000FFC35E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BB47B29AA7DF000FFC35E /* ContentView.swift */; };
 		3C9BB47E29AA7DF100FFC35E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9BB47D29AA7DF100FFC35E /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5637772D1A88CE00B634D9 /* RRMediaView in Frameworks */,
 				3CB81FE82B66C33200DC453C /* MediaPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +99,7 @@
 			name = MediaPickerDemo;
 			packageProductDependencies = (
 				3CB81FE72B66C33200DC453C /* MediaPicker */,
+				3C5637762D1A88CE00B634D9 /* RRMediaView */,
 			);
 			productName = MediaPickerDemo;
 			productReference = 3C9BB47629AA7DF000FFC35E /* MediaPickerDemo.app */;
@@ -128,6 +131,7 @@
 			mainGroup = 3C9BB46D29AA7DF000FFC35E;
 			packageReferences = (
 				3CB81FE62B66C33200DC453C /* XCLocalSwiftPackageReference ".." */,
+				3C5637752D1A88CE00B634D9 /* XCRemoteSwiftPackageReference "RRMediaView" */,
 			);
 			productRefGroup = 3C9BB47729AA7DF000FFC35E /* Products */;
 			projectDirPath = "";
@@ -285,9 +289,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MediaPickerDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = T8G22WTMB9;
+				DEVELOPMENT_TEAM = WNCL3CUH9C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access camera for capturing photo";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "access microphone to record audio";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,9 +320,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MediaPickerDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = T8G22WTMB9;
+				DEVELOPMENT_TEAM = WNCL3CUH9C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access camera for capturing photo";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "access microphone to record audio";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -365,7 +373,23 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		3C5637752D1A88CE00B634D9 /* XCRemoteSwiftPackageReference "RRMediaView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rsekar1094/RRMediaView";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		3C5637762D1A88CE00B634D9 /* RRMediaView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C5637752D1A88CE00B634D9 /* XCRemoteSwiftPackageReference "RRMediaView" */;
+			productName = RRMediaView;
+		};
 		3CB81FE72B66C33200DC453C /* MediaPicker */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MediaPicker;
